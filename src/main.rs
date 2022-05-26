@@ -55,6 +55,8 @@ fn main() {
 
     let mut todo_list = TodoList::new().expect("inicializo mal la \"db\"");
 
+    // implementar un "view" para chequear las tasks
+    // loopearlo tipo while (fgets())
     if action == "add" {
         todo_list.insert(item);
         match todo_list.save() {
